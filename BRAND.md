@@ -29,3 +29,7 @@ Keep **Terms** and **Privacy** placeholders generic ("we", "the service") until 
 ## Legacy name
 
 **BookWyrm Content Studio** was the previous public product name. Internal repo paths and scripts may still use `bwurm` or `BookWyrm`; customer facing copy should say **Novelmate Studio**. The fiction name **BookWyrm** may still appear in lore or legacy URLs only where intentional.
+
+## Phyllux honesty rail
+
+**Phyllux Technologies** maintains **https://phyllux.io/research-status.html**. Novelmate Studio is scored on **row five** (manuscript tooling) so public language on **novelmatestudio.com** and evidence rows on phyllux.io stay aligned.

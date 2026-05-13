@@ -41,6 +41,10 @@ Confirms relative `href` targets under `public/` exist.
 
 See also **`CONTRIBUTING.md`** and **`SECURITY.md`**.
 
+## Phyllux honesty rail
+
+Public claim posture for this product lane is also reflected on **Phyllux Technologies** at **https://phyllux.io/research-status.html** (see **row five** for manuscript tooling). Use that table when you compare marketing copy to what is actually evidenced.
+
 ## Application code
 
 The desktop or local first product continues to live under **`CLAWWORK/BookWyrm/content-studio/`** in the main workspace until you split it; this repo is the **public site** only.
