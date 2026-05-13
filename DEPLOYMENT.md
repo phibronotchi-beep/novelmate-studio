@@ -42,3 +42,7 @@ Store **Stripe** live or test keys only in **Cloudflare environment variables** 
 ## 6. Legacy Phyllux URLs
 
 If **`/bwurm.html`** or **`/bwurm-test-authors.html`** on phyllux.io should land on this site, update redirects in the Phyllux Cloudflare config (see `phyllux-technologies-web/docs/CLOUDFLARE_PAGES_EDGE.md`). That change is tracked in the mothership repo, not here.
+
+## 7. Honesty rail (Phyllux)
+
+Phyllux Technologies publishes **[research status](https://phyllux.io/research-status.html)** on phyllux.io. Novelmate Studio is scored on **row five**. When you change marketing copy here, line it up with that table so deploys stay consistent with the public evidence story.
