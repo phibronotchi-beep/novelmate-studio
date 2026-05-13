@@ -9,3 +9,5 @@ Then add to each HTML `<head>`:
 ```
 
 Until the file exists, the site omits `og:image` to avoid broken preview URLs.
+
+When hero or social copy changes, keep claims consistent with Phyllux **[research status](https://phyllux.io/research-status.html)** (**row five** for this product lane).
