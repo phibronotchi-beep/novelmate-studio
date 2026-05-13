@@ -12,6 +12,7 @@ This repository is the **static marketing site** for Novelmate Studio. Keep chan
 
 - Prefer language aligned with the product definition repo (`bookwyrm-definition-web`) when you change positioning.
 - Do not upgrade roadmap items to “available today” without verification.
+- Phyllux publishes a public evidence table at **https://phyllux.io/research-status.html** (Novelmate on **row five**). When you change marketing claims, check that row or note the mismatch in your PR description.
 
 ## Questions
 

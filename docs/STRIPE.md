@@ -39,3 +39,7 @@ When you add a backend, verify `checkout.session.completed` and store `customer_
 ## Test mode
 
 Use test keys and [Stripe test cards](https://stripe.com/docs/testing) until copy and refund policy are final.
+
+## Honesty rail (Phyllux)
+
+Marketing and tier copy on this site should stay consistent with Phyllux **[research status](https://phyllux.io/research-status.html)** (**row five** for Novelmate Studio). When Stripe product names or checkout descriptions change, update the public scorecard in the mothership repo in the same cadence when you can so customers see one story.
