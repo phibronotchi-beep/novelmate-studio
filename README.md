@@ -16,6 +16,9 @@ Public marketing and conversion site for **Novelmate Studio**, local first AI as
 | `docs/STRIPE.md` | Stripe phases and tier copy |
 | `BRAND.md` | Naming and Phyllux vs standalone variants |
 | `DEPLOYMENT.md` | Domain, Pages, DNS, secrets |
+| `CONTRIBUTING.md` | PR and hygiene expectations |
+| `LICENSE` | Proprietary; all rights reserved |
+| `SECURITY.md` | How to report issues safely |
 
 ## Local checks
 
@@ -27,8 +30,13 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/check-links.ps1
 
 Confirms relative `href` targets under `public/` exist.
 
-2. Add **`assets/og-1200x630.webp`** (quality 82, max width 1920 per workspace image rules) and wire `og:image` in each HTML head, or keep title or description only until the asset exists.
+## Before first production deploy
+
+1. Register **novelmatestudio.com** at your registrar and wire DNS per `DEPLOYMENT.md`.
+2. Add **`public/assets/og-1200x630.webp`** (quality 82, max width 1920 per workspace image rules) and wire `og:image` in each HTML head, or keep title or description only until the asset exists.
 3. Replace Privacy and Terms stubs with counsel reviewed text when you take payments.
+
+See also **`CONTRIBUTING.md`** and **`SECURITY.md`**.
 
 ## Application code
 

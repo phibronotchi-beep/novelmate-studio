@@ -4,6 +4,8 @@
 
 Static **marketing and conversion** site for **Novelmate Studio**. Not the Python or desktop application; that remains in the Phyllux workspace under `CLAWWORK/BookWyrm/content-studio/` until migrated.
 
+Contributor norms: [`CONTRIBUTING.md`](CONTRIBUTING.md). Security reporting: [`SECURITY.md`](SECURITY.md). License: [`LICENSE`](LICENSE).
+
 ## Conventions
 
 - **Mobile first:** default CSS for narrow viewports; use `min-width` media queries for larger layouts.
