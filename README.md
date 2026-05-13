@@ -12,6 +12,9 @@ Public marketing and conversion site for **Novelmate Studio**, local first AI as
 | `public/privacy.html` | Privacy policy stub |
 | `public/terms.html` | Terms stub |
 | `public/contact.html` | Contact |
+| `public/robots.txt` | Crawler hints |
+| `public/sitemap.xml` | Sitemap |
+| `public/.well-known/security.txt` | RFC 9116 security contact |
 | `public/css/site.css` | Mobile first shared styles |
 | `docs/STRIPE.md` | Stripe phases and tier copy |
 | `BRAND.md` | Naming and Phyllux vs standalone variants |
