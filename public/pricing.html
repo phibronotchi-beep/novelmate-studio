@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Pricing — Novelmate Studio</title>
+  <meta name="description" content="Try limits, Pro subscription, and Studio queue slots for Novelmate Studio. Replace Stripe links after you create Payment Links or Billing prices." />
+  <meta property="og:title" content="Pricing — Novelmate Studio" />
+  <meta property="og:description" content="Transparent tiers: try, Pro, and limited Studio queue. Stripe checkout URLs are wired from your dashboard." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://novelmatestudio.com/pricing.html" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="stylesheet" href="css/site.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23141820'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%236ee7c5' font-size='14' font-family='system-ui' font-weight='700'%3EN%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">Novelmate Studio</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="pricing.html" aria-current="page">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Pricing</h1>
+      <p class="lede">
+        Try before you buy uses <strong>both</strong> a time window and usage limits so support stays sane.
+        Stripe Payment Links or Billing checkout URLs go in the buttons below once you create them in the Stripe Dashboard (see <code>docs/STRIPE.md</code> in the repo).
+      </p>
+    </section>
+
+    <section class="pricing-grid three">
+      <div class="card">
+        <h3>Try</h3>
+        <p class="tag-roadmap">Configure in Stripe</p>
+        <p class="price">Free trial</p>
+        <p style="color:var(--muted);font-size:0.95rem;margin-bottom:var(--space-md);">
+          Example guardrails: one active project, capped export credits, or a 14 day window. Whichever hits first ends the try period.
+        </p>
+        <a class="btn btn-secondary" href="contact.html">Join waitlist</a>
+      </div>
+      <div class="card">
+        <h3>Pro</h3>
+        <p class="tag-roadmap">Stripe Billing</p>
+        <p class="price">Monthly</p>
+        <p style="color:var(--muted);font-size:0.95rem;margin-bottom:var(--space-md);">
+          For local first power users. Fair use language for long runs and thermals stays in the Terms you publish with counsel.
+        </p>
+        <a class="btn btn-primary" href="mailto:hello@novelmatestudio.com?subject=Pro%20interest">Email to subscribe</a>
+      </div>
+      <div class="card">
+        <h3>Studio queue</h3>
+        <p class="tag-roadmap">Limited slots</p>
+        <p class="price">Custom</p>
+        <p style="color:var(--muted);font-size:0.95rem;margin-bottom:var(--space-md);">
+          Human in the loop passes or pilot installs. Best framed as waitlist or deposit, not infinite throughput.
+        </p>
+        <a class="btn btn-secondary" href="contact.html">Request a slot</a>
+      </div>
+    </section>
+
+    <section class="prose">
+      <h2>Stripe placeholders</h2>
+      <p>
+        Replace the <strong>mailto</strong> and waitlist flows with real <strong>Stripe Checkout</strong> or <strong>Customer Portal</strong> links when your product and refund policy are ready.
+        Do not commit API keys. Use Cloudflare env or GitHub secrets for any server side integration.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p>© <span id="y"></span> Novelmate Studio.</p>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

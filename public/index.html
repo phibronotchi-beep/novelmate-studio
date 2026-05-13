@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Novelmate Studio — local first fiction workspace</title>
+  <meta name="description" content="Novelmate Studio helps you plan, draft, and export long form fiction on your machine. Honest about capacity. Built for authors who want custody of their files." />
+  <meta property="og:title" content="Novelmate Studio — local first fiction workspace" />
+  <meta property="og:description" content="Plan, draft, and export novels locally. You keep your manuscripts." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://novelmatestudio.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="css/site.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23141820'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%236ee7c5' font-size='14' font-family='system-ui' font-weight='700'%3EN%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">Novelmate Studio</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="pill-row">
+        <span class="pill">Local first</span>
+        <span class="pill">Alpha to beta path</span>
+      </div>
+      <h1>Your novel, your machine, your pace.</h1>
+      <p class="lede">
+        Novelmate Studio is a local first workspace for long form fiction: planning, drafting, polish, and export.
+        We do not pretend to be a hosted factory. Full book runs can take hours on a single workstation. We say that up front.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="pricing.html">See pricing</a>
+        <a class="btn btn-secondary" href="faq.html">Read the FAQ</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Proof bar (what “shipped” means here)</h2>
+      <div class="card">
+        <p class="tag-shipped">Shipped direction</p>
+        <p style="margin-top:var(--space-sm);color:var(--muted);">
+          The product aims at a clear pipeline: premise and outline in, structured prose out, exports such as EPUB and DOCX when the toolchain on your side is configured.
+          Exact formats and GUI surfaces evolve; check the release notes in the application repo when you install.
+        </p>
+      </div>
+      <div class="card">
+        <p class="tag-roadmap">Roadmap</p>
+        <p style="margin-top:var(--space-sm);color:var(--muted);">
+          Hosted collaboration, unlimited cloud throughput, and “one click bestseller” claims are not on the honesty list.
+          If it is not measured on your hardware, we do not sell it as done.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Who it is for</h2>
+      <ul class="check">
+        <li>Authors who want <strong>custody</strong> of drafts and models on their own systems.</li>
+        <li>Writers who are fine with <strong>queue style</strong> runs instead of magic instant books.</li>
+        <li>Teams evaluating <strong>subscription or pilot</strong> access as we wire billing (see Pricing).</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p>© <span id="y"></span> Novelmate Studio. Legal entity and Phyllux positioning: see <a href="https://github.com/phibronotchi-beep/novelmate-studio/blob/main/BRAND.md">BRAND.md</a> in the site repository.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

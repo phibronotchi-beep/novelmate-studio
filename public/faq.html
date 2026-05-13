@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>FAQ — Novelmate Studio</title>
+  <meta name="description" content="AI disclosure, capacity, local first setup, and what Novelmate Studio does not promise." />
+  <meta property="og:title" content="FAQ — Novelmate Studio" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://novelmatestudio.com/faq.html" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="stylesheet" href="css/site.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23141820'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%236ee7c5' font-size='14' font-family='system-ui' font-weight='700'%3EN%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="brand" href="index.html">Novelmate Studio</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html" aria-current="page">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap prose">
+    <section class="hero">
+      <h1>FAQ</h1>
+      <p class="lede">Short answers. This is not legal advice.</p>
+    </section>
+
+    <section>
+      <h2>Does Novelmate Studio run in the cloud?</h2>
+      <p>
+        The product direction is <strong>local first</strong>: your hardware, your models where you configure them, your files.
+        A future hosted tier would be a separate announcement with its own security story.
+      </p>
+    </section>
+
+    <section>
+      <h2>How long does a full book take?</h2>
+      <p>
+        It depends on model size, GPU, and settings. Plan for <strong>hours</strong> on a laptop class machine for long jobs, not seconds.
+        Thermal limits and VRAM matter in the real world.
+      </p>
+    </section>
+
+    <section>
+      <h2>AI and copyright</h2>
+      <p>
+        Disclosure rules vary by region and platform. Keep human review in the loop for anything you publish or sell.
+        For depth, see the application documentation on AI authorship and copyright in the Content Studio source tree (<code>COPYRIGHT_AND_AI_AUTHORSHIP.md</code>).
+      </p>
+    </section>
+
+    <section>
+      <h2>What you should not expect</h2>
+      <p>
+        Guaranteed bestseller outcomes, unlimited instant generation at scale, or “we own none of your risk” hand waves.
+        If a claim is not measured on your setup, treat it as marketing from someone else.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <nav aria-label="Footer">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p>© <span id="y"></span> Novelmate Studio.</p>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
