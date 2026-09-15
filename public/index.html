@@ -3,79 +3,462 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Novelmate Studio — local first fiction workspace</title>
-  <meta name="description" content="Novelmate Studio helps you plan, draft, and export long form fiction on your machine. Honest about capacity. Built for authors who want custody of their files." />
-  <meta property="og:title" content="Novelmate Studio — local first fiction workspace" />
-  <meta property="og:description" content="Plan, draft, and export novels locally. You keep your manuscripts." />
+  <title>Novelmate Studio — local first fiction workspace | Coming Fall/Winter 2026</title>
+  <meta name="description" content="Novelmate Studio helps authors plan, draft, polish, and export long form fiction on their own machine with Ollama. Coming Fall/Winter 2026. Join the waitlist." />
+  <meta property="og:title" content="Novelmate Studio — Coming Fall/Winter 2026" />
+  <meta property="og:description" content="Local first novel workspace. Premise to manuscript to EPUB. Your files stay on your machine." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://novelmatestudio.com/" />
+  <meta property="og:image" content="https://novelmatestudio.com/assets/og-1200x630.webp" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="css/site.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23141820'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%236ee7c5' font-size='14' font-family='system-ui' font-weight='700'%3EN%3C/text%3E%3C/svg%3E" />
+  <meta name="twitter:image" content="https://novelmatestudio.com/assets/og-1200x630.webp" />
+  <link rel="canonical" href="https://novelmatestudio.com/" />
+  <link rel="stylesheet" href="css/site.css?v=20260912b" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23121820'%3E%3C/rect%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%236ee7c5' font-size='14' font-family='system-ui' font-weight='700'%3EN%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Novelmate Studio",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Windows, macOS, Linux",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/PreOrder" },
+    "description": "Local first AI assisted fiction workspace for planning, drafting, polish, and export. Coming Fall/Winter 2026.",
+    "url": "https://novelmatestudio.com/"
+  }
+  </script>
 </head>
 <body>
+  <a class="sr-only" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="inner">
-      <a class="brand" href="index.html">Novelmate Studio</a>
-      <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">Novelmate Studio <span>soon</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="nav" data-site-nav aria-label="Primary">
         <a href="index.html" aria-current="page">Home</a>
+        <a href="#pipeline">Pipeline</a>
+        <a href="#features">Features</a>
         <a href="pricing.html">Pricing</a>
         <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
+        <a href="#waitlist">Waitlist</a>
+        <a class="nav-ext" href="https://finallyme.help/" rel="noopener noreferrer" target="_blank">Finally Me</a>
+        <a class="nav-ext" href="https://phyllux.com/" rel="noopener noreferrer" target="_blank">phyllux.com</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <section class="hero">
+  <section class="hero-stage" aria-label="Novelmate Studio hero">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="assets/marketing/novelmate-studio-hero.webp?v=20260730" alt="" width="1920" height="1080" fetchpriority="high" />
+    </div>
+    <div class="hero-inner">
       <div class="pill-row">
         <span class="pill">Local first</span>
-        <span class="pill">Alpha to beta path</span>
+        <span class="pill">Coming Fall / Winter 2026</span>
+        <span class="pill">Ollama on your machine</span>
       </div>
-      <h1>Your novel, your machine, your pace.</h1>
+      <h1>Your novel. Your machine. Your pace.</h1>
       <p class="lede">
-        Novelmate Studio is a local first workspace for long form fiction: planning, drafting, polish, and export.
-        We do not pretend to be a hosted factory. Full book runs can take hours on a single workstation. We say that up front.
+        Novelmate Studio is a local first workspace for long form fiction. Plan the book, draft the scenes, keep the cast consistent, polish the pages, and export files you can open anywhere.
+        Full book runs can take hours on a single workstation. We say that up front.
       </p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="pricing.html">See pricing</a>
-        <a class="btn btn-secondary" href="faq.html">Read the FAQ</a>
+        <a class="btn btn-primary" href="#waitlist">Join the waitlist</a>
+        <a class="btn btn-secondary" href="https://finallyme.help/" rel="noopener noreferrer" target="_blank">Finally Me</a>
+        <a class="btn btn-secondary" href="https://phyllux.com/" rel="noopener noreferrer" target="_blank">phyllux.com</a>
+        <a class="btn btn-ghost" href="#pipeline">See the pipeline</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <section class="band sister-band" aria-labelledby="sister-heading">
+      <div class="wrap">
+        <p class="section-kicker">Sister sites</p>
+        <h2 class="section-title" id="sister-heading">Finally Me and Sproule Lit</h2>
+        <p class="section-lead">Novelmate Studio is one door in a wider circle. These two sites are the other public homes people ask for most.</p>
+        <div class="sister-grid">
+          <a class="sister-card" href="https://finallyme.help/" rel="noopener noreferrer" target="_blank">
+            <p class="sister-kicker">Open beta</p>
+            <h3>finallyme.help</h3>
+            <p>Paul Chartier’s Finally Me methodology and practice companion.</p>
+          </a>
+          <a class="sister-card" href="https://phyllux.com/" rel="noopener noreferrer" target="_blank">
+            <p class="sister-kicker">Sproule Lit</p>
+            <h3>phyllux.com</h3>
+            <p>Bookstore, Today recovery toolkit, and the Novelmate hub on the house site.</p>
+          </a>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>Proof bar (what “shipped” means here)</h2>
-      <div class="card">
-        <p class="tag-shipped">Shipped direction</p>
-        <p style="margin-top:var(--space-sm);color:var(--muted);">
-          The product aims at a clear pipeline: premise and outline in, structured prose out, exports such as EPUB and DOCX when the toolchain on your side is configured.
-          Exact formats and GUI surfaces evolve; check the release notes in the application repo when you install.
-        </p>
+    <section class="wrap" aria-labelledby="what-heading">
+      <p class="section-kicker">What it is</p>
+      <h2 class="section-title" id="what-heading">A studio for finishing books, not chasing dashboards</h2>
+      <p class="section-lead">
+        Authors get tired. Motor issues happen. Blank pages win too often. Novelmate Studio sits beside you as a structured companion: you set the vision, the machine helps with drafting, and you keep final say.
+      </p>
+
+      <div class="feature-split">
+        <figure class="feature-media">
+          <img src="assets/marketing/bcs-ad-aspiration-premise-to-novel.webp" alt="Visual metaphor of a premise becoming a finished novel" width="1376" height="768" loading="lazy" />
+        </figure>
+        <div class="feature-copy">
+          <h3>Premise in. Manuscript out.</h3>
+          <p>Start with a premise, outline notes, and constraints. Move through scene plans into prose. Keep entity ledgers and summaries so later chapters still match earlier ones.</p>
+          <ul>
+            <li>Outline and beat structure you can edit</li>
+            <li>Scene by scene drafting with drift checks</li>
+            <li>Developmental, line, and copy edit passes when you ask for them</li>
+            <li>Markdown first exports, plus EPUB and DOCX when you are ready</li>
+          </ul>
+        </div>
       </div>
-      <div class="card">
-        <p class="tag-roadmap">Roadmap</p>
-        <p style="margin-top:var(--space-sm);color:var(--muted);">
-          Hosted collaboration, unlimited cloud throughput, and “one click bestseller” claims are not on the honesty list.
-          If it is not measured on your hardware, we do not sell it as done.
-        </p>
+
+      <div class="feature-split reverse">
+        <figure class="feature-media">
+          <img src="assets/marketing/nm-pdf-card-local-first.webp" alt="Local custody metaphor for manuscripts on your own computer" width="1400" height="933" loading="lazy" />
+        </figure>
+        <div class="feature-copy">
+          <h3>Local first by design</h3>
+          <p>Generation runs through Ollama on hardware you control. Your drafts are files on disk. We do not sell a story where your manuscript becomes someone else’s training set by default.</p>
+          <ul>
+            <li>No required cloud manuscript vault for the core path</li>
+            <li>Works with the models you install locally</li>
+            <li>Honest about heat, memory, and queue time</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2>Who it is for</h2>
-      <ul class="check">
-        <li>Authors who want <strong>custody</strong> of drafts and models on their own systems.</li>
-        <li>Writers who are fine with <strong>queue style</strong> runs instead of magic instant books.</li>
-        <li>Teams evaluating <strong>subscription or pilot</strong> access as we wire billing (see Pricing).</li>
-      </ul>
+    <section class="band" id="pipeline" aria-labelledby="pipeline-heading">
+      <div class="wrap">
+        <p class="section-kicker">The pipeline</p>
+        <h2 class="section-title" id="pipeline-heading">Five stages from blank page to shelf ready files</h2>
+        <p class="section-lead">Same story spine whether you prefer the web studio, the classic tabs, or the CLI. Pick the path that fits your day.</p>
+        <div class="steps">
+          <article class="step">
+            <h3>Plan</h3>
+            <p>Premise, outline, genre voice, and hard constraints. The map before the miles.</p>
+          </article>
+          <article class="step">
+            <h3>Scene</h3>
+            <p>Beats, goals, and emotional turns laid out so drafting has somewhere to land.</p>
+          </article>
+          <article class="step">
+            <h3>Draft</h3>
+            <p>Prose in chunks with summaries and entity awareness so cast and places stay coherent.</p>
+          </article>
+          <article class="step">
+            <h3>Polish</h3>
+            <p>Edit passes that respect your voice. You approve what stays.</p>
+          </article>
+          <article class="step">
+            <h3>Export</h3>
+            <p>Markdown you can keep editing. EPUB and DOCX when the manuscript is ready to leave the nest.</p>
+          </article>
+        </div>
+        <figure class="feature-media" style="margin-top:2rem">
+          <img src="assets/marketing/nm-pdf-workflow-four-stage.webp" alt="Abstract four stage creative workflow illustration" width="1400" height="933" loading="lazy" />
+        </figure>
+      </div>
     </section>
 
-    <section>
-      <h2>Cross check on phyllux.io</h2>
-      <div class="card">
-        <p style="margin:0;color:var(--muted);">
-          Phyllux Technologies publishes a public <a href="https://phyllux.io/research-status.html">research status</a> scorecard. Novelmate Studio is tracked on <strong>row five</strong> so claims here can be read against what is evidenced today, not hero copy alone.
-        </p>
+    <section class="wrap" id="features" aria-labelledby="features-heading">
+      <p class="section-kicker">Feature atlas</p>
+      <h2 class="section-title" id="features-heading">Everything the product is aiming to put in your hands</h2>
+      <p class="section-lead">Some of this already runs in the local alpha path. Some is labeled roadmap. Fall / Winter 2026 is when we want the public product story to match a coherent install for authors outside the workshop.</p>
+
+      <div class="card-grid two">
+        <article class="card">
+          <img class="card-img" src="assets/marketing/nm-pdf-card-pipeline.webp" alt="Pipeline glass panel metaphor" width="1400" height="933" loading="lazy" />
+          <div class="card-body">
+            <p class="tag-shipped">Shipped direction</p>
+            <h3>Structured generation pipeline</h3>
+            <p>Outline to scenes to prose with project configs, manifests, and repeatable runs you can queue overnight.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="assets/marketing/bcs-ad-feature-entity-ledger-consistent.webp" alt="Entity ledger consistency metaphor" width="1376" height="768" loading="lazy" />
+          <div class="card-body">
+            <p class="tag-shipped">Shipped direction</p>
+            <h3>Entity ledger and drift checks</h3>
+            <p>Names, places, and story facts tracked so chapter forty still remembers chapter four.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="assets/marketing/nm-pdf-ollama-desk.webp" alt="Local model workstation at a writing desk" width="1400" height="933" loading="lazy" />
+          <div class="card-body">
+            <p class="tag-shipped">Shipped direction</p>
+            <h3>Ollama on your desk</h3>
+            <p>Bring the models you trust. Swap sizes when you need speed or depth. No forced remote brain.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="assets/marketing/bcs-ad-feature-export-formats.webp" alt="Export formats metaphor with manuscript packages" width="1376" height="768" loading="lazy" />
+          <div class="card-body">
+            <p class="tag-shipped">Shipped direction</p>
+            <h3>Exports authors actually use</h3>
+            <p>Markdown for editing. EPUB for reading and stores. DOCX when a human editor asks for it.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="assets/marketing/nm-pdf-accessibility-warm.webp" alt="Warm accessible writing desk" width="1400" height="933" loading="lazy" />
+          <div class="card-body">
+            <p class="tag-shipped">Design goal</p>
+            <h3>Built for hard writing days</h3>
+            <p>Minimal input workflow when fatigue or motor load is high. Keyboard first habits. Voice input stays on the roadmap until it is proven.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="assets/marketing/bcs-ad-anti-extraction-dont-harvest.webp" alt="Anti extraction privacy metaphor" width="1376" height="768" loading="lazy" />
+          <div class="card-body">
+            <p class="tag-shipped">Stance</p>
+            <h3>Your words are not a harvest</h3>
+            <p>Local custody is the point. Marketing will never claim secret cloud training on your manuscripts.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="assets/marketing/family-hype-voice-headphones.webp" alt="Quiet listening and voice work atmosphere" width="1400" height="933" loading="lazy" />
+          <div class="card-body">
+            <p class="tag-roadmap">Roadmap</p>
+            <h3>Voice and lower friction input</h3>
+            <p>Speak when typing hurts. Still labeled roadmap until the path is stable across machines.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="assets/marketing/family-hype-collab-two-chairs.webp" alt="Two chairs suggesting careful collaboration" width="1400" height="933" loading="lazy" />
+          <div class="card-body">
+            <p class="tag-roadmap">Roadmap</p>
+            <h3>Human in the loop studio help</h3>
+            <p>Optional pilot slots for authors who want a guided pass. Not infinite cloud throughput. Not one click bestsellers.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" aria-labelledby="gallery-heading">
+      <p class="section-kicker">Atmosphere</p>
+      <h2 class="section-title" id="gallery-heading">The mood of the work</h2>
+      <p class="section-lead">Desks, shelves, patience, and paper. Novelmate Studio is meant to feel like a quiet room where a long book can actually get finished.</p>
+      <div class="mosaic">
+        <figure>
+          <img src="assets/marketing/family-hype-desk-writer.webp" alt="Writer at a focused desk" width="1400" height="933" loading="lazy" />
+          <figcaption>Focus at the desk</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/marketing/nm-pdf-photo-01-library.webp" alt="Library shelves in documentary light" width="1400" height="933" loading="lazy" />
+          <figcaption>Library air</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/marketing/family-hype-reading-nook-rest.webp" alt="Reading nook for rest between drafts" width="1400" height="933" loading="lazy" />
+          <figcaption>Rest between drafts</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/marketing/family-hype-patience-hourglass.webp" alt="Hourglass suggesting patient long runs" width="1400" height="933" loading="lazy" />
+          <figcaption>Patience for long runs</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/marketing/family-hype-story-constellation.webp" alt="Story points like a constellation" width="1400" height="933" loading="lazy" />
+          <figcaption>Story as constellation</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/marketing/family-hype-compass-plan.webp" alt="Compass planning metaphor" width="1400" height="933" loading="lazy" />
+          <figcaption>Plan with a compass</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/marketing/nm-pdf-photo-03-paper-macro.webp" alt="Paper texture close up" width="1400" height="933" loading="lazy" />
+          <figcaption>Paper and ink</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/marketing/family-hype-export-trays.webp" alt="Export trays metaphor" width="1400" height="933" loading="lazy" />
+          <figcaption>Exports ready to leave</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="who-heading">
+      <div class="wrap">
+        <div class="feature-split">
+          <figure class="feature-media">
+            <img src="assets/marketing/bcs-ad-accessibility-write-when-hard.webp" alt="Writing when the blank page feels hard" width="1376" height="768" loading="lazy" />
+          </figure>
+          <div class="feature-copy">
+            <p class="section-kicker">Who it is for</p>
+            <h2 class="section-title" id="who-heading">Authors who want custody and completion</h2>
+            <ul>
+              <li>Writers who want drafts and models on their own systems</li>
+              <li>People fine with queue style runs instead of fake instant novels</li>
+              <li>Anyone who needs structure when energy is low</li>
+              <li>Indie authors aiming at EPUB and store ready packages without renting their manuscript</li>
+            </ul>
+            <p>If you need a social network for writers, this is not that. If you need a patient studio that helps you finish, you are in the right place.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="honesty" aria-labelledby="honesty-heading">
+      <p class="section-kicker">Honesty rail</p>
+      <h2 class="section-title" id="honesty-heading">What we will and will not claim</h2>
+      <div class="card-grid two" style="margin-top:1.75rem">
+        <article class="card">
+          <div class="card-body">
+            <p class="tag-shipped">Available direction today</p>
+            <h3>Local pipeline craft</h3>
+            <p>Premise to outline to prose tooling that already exists in the Novelmate Studio workshop builds. Exact GUI surfaces keep evolving. Capacity depends on your GPU, RAM, and model choice.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <p class="tag-roadmap">Roadmap / not sold as done</p>
+            <h3>Hosted multi tenant manuscript cloud</h3>
+            <p>Unlimited cloud throughput, one click bestsellers, and secret sauce that skips reading your own pages are not on the honesty list.</p>
+          </div>
+        </article>
+      </div>
+      <p class="section-lead" style="margin-top:1.5rem">
+        Phyllux Technologies publishes a public <a href="https://phyllux.io/research-status.html">research status</a> scorecard. Novelmate Studio is tracked on <strong>row five</strong> so claims here can be checked against evidence, not hero copy alone.
+      </p>
+      <figure class="feature-media" style="margin-top:1.5rem">
+        <img src="assets/marketing/nm-pdf-journey-proof-map.webp" alt="Proof path map with abstract icons" width="1400" height="933" loading="lazy" />
+      </figure>
+    </section>
+
+    <section class="wrap" aria-labelledby="paths-heading">
+      <p class="section-kicker">How you work</p>
+      <h2 class="section-title" id="paths-heading">Web studio, classic tabs, or CLI</h2>
+      <p class="section-lead">Same manuscript brain. Different doors in.</p>
+      <div class="card-grid three">
+        <article class="card">
+          <img class="card-img" src="assets/marketing/nm-pdf-dev-laptop-books.webp" alt="Laptop among books" width="1400" height="933" loading="lazy" />
+          <div class="card-body">
+            <h3>Web studio</h3>
+            <p>Visual tabs, mission control, and a calmer day to day surface for directing runs.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="assets/marketing/family-hype-doorway-beginning.webp" alt="Doorway at the beginning of a project" width="1400" height="933" loading="lazy" />
+          <div class="card-body">
+            <h3>Classic interface</h3>
+            <p>Familiar panels for authors who already know the older Novelmate Studio layout.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="assets/marketing/nm-pdf-card-export.webp" alt="Export package metaphor" width="1400" height="933" loading="lazy" />
+          <div class="card-body">
+            <h3>CLI and scripts</h3>
+            <p>Batch manifests, overnight queues, and repeatable commands for power users.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="export-heading">
+      <div class="wrap">
+        <div class="feature-split reverse">
+          <figure class="feature-media">
+            <img src="assets/marketing/family-hype-exports-metaphor.webp" alt="Manuscript exports as finished trays" width="1400" height="933" loading="lazy" />
+          </figure>
+          <div class="feature-copy">
+            <p class="section-kicker">Shipping</p>
+            <h2 class="section-title" id="export-heading">Leave with files you own</h2>
+            <p>Default craft stays in Markdown so you can keep editing. When the book is ready, export EPUB and DOCX for stores, editors, and proof readers.</p>
+            <p>We also care about checklists before upload: metadata, front matter, warnings, and format sanity. Fancy packaging without a readable book is still a failure.</p>
+            <a class="btn btn-secondary" href="pricing.html">See planned pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" aria-labelledby="timeline-heading">
+      <p class="section-kicker">Launch window</p>
+      <h2 class="section-title" id="timeline-heading">Fall / Winter 2026</h2>
+      <p class="section-lead">
+        That is the public target for a coherent product release authors can install with clear docs, honest limits, and billing that matches what ships.
+        Until then this site is the front door: learn everything, join the list, and expect progress updates instead of fake live download buttons.
+      </p>
+      <div class="card-grid three" style="margin-top:1.75rem">
+        <article class="card">
+          <img class="card-img" src="assets/marketing/family-hype-roadmap-horizon.webp" alt="Roadmap horizon landscape" width="1400" height="933" loading="lazy" />
+          <div class="card-body">
+            <h3>Now</h3>
+            <p>Workshop builds, Sproule Lit production use, and this marketing site going live.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="assets/marketing/nm-pdf-candle-today.webp" alt="Candle suggesting patient progress" width="1400" height="933" loading="lazy" />
+          <div class="card-body">
+            <h3>Next</h3>
+            <p>Packaging, onboarding, pricing, and proof that matches the public claim list.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="assets/marketing/family-hype-milestone-celebration.webp" alt="Milestone celebration atmosphere" width="1400" height="933" loading="lazy" />
+          <div class="card-body">
+            <h3>Fall / Winter 2026</h3>
+            <p>Public product window. Waitlist gets first word when installs open.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="waitlist" aria-labelledby="waitlist-heading">
+      <p class="section-kicker">Waitlist</p>
+      <h2 class="section-title" id="waitlist-heading">Get notified when Novelmate Studio opens</h2>
+      <p class="section-lead">Leave an email. We will write when Fall / Winter 2026 access is real. No spam. No pretend download.</p>
+      <form class="waitlist" action="https://formsubmit.co/ajax/phibronotchi@gmail.com" method="POST" data-waitlist>
+        <div>
+          <label for="wait-email">Email</label>
+          <input id="wait-email" name="email" type="email" autocomplete="email" required placeholder="you@email.com" />
+          <input type="hidden" name="_subject" value="Novelmate Studio waitlist" />
+        </div>
+        <button class="btn btn-primary" type="submit">Join waitlist</button>
+      </form>
+      <p class="waitlist-note" data-waitlist-msg hidden></p>
+      <p class="waitlist-note">Prefer a human note? <a href="contact.html">Contact</a> or email <a href="mailto:hello@novelmatestudio.com">hello@novelmatestudio.com</a>.</p>
+    </section>
+
+    <section class="wrap" aria-labelledby="endeavors-heading">
+      <p class="section-kicker">Also from this circle</p>
+      <h2 class="section-title" id="endeavors-heading">Books, recovery tools, and the Finally Me method</h2>
+      <p class="section-lead">Novelmate Studio sits beside other public work from the same makers. Different products. Same care for local first craft and honest claims.</p>
+      <div class="steps">
+        <article class="step">
+          <h3>Finally Me</h3>
+          <p>Paul Chartier’s methodology for reclaiming agency. Open beta on finallyme.help.</p>
+          <p><a href="https://finallyme.help/" rel="noopener noreferrer" target="_blank">finallyme.help</a></p>
+        </article>
+        <article class="step">
+          <h3>Today</h3>
+          <p>Free local first recovery toolkit for hard hours and clean days.</p>
+          <p><a href="https://phyllux.com/today.html" rel="noopener noreferrer" target="_blank">phyllux.com/today</a></p>
+        </article>
+        <article class="step">
+          <h3>Sproule Lit</h3>
+          <p>Boutique literary storefront and direct EPUB titles on phyllux.com.</p>
+          <p><a href="https://phyllux.com/" rel="noopener noreferrer" target="_blank">phyllux.com</a></p>
+        </article>
+        <article class="step">
+          <h3>Phyllux Technologies</h3>
+          <p>Company research rail and capacity evidence on phyllux.io.</p>
+          <p><a href="https://phyllux.io/" rel="noopener noreferrer" target="_blank">phyllux.io</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <p class="section-kicker">Keep exploring</p>
+        <h2 class="section-title">Pricing, FAQ, and proof</h2>
+        <div class="cta-row">
+          <a class="btn btn-secondary" href="pricing.html">Pricing plans</a>
+          <a class="btn btn-secondary" href="faq.html">FAQ</a>
+          <a class="btn btn-ghost" href="https://phyllux.io/research-status.html">Phyllux research status</a>
+          <a class="btn btn-ghost" href="https://phyllux.com/">Sproule Lit bookstore</a>
+          <a class="btn btn-ghost" href="https://finallyme.help/" rel="noopener noreferrer" target="_blank">Finally Me</a>
+        </div>
       </div>
     </section>
   </main>
@@ -83,15 +466,51 @@
   <footer class="site-footer">
     <div class="inner">
       <nav aria-label="Footer">
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <a href="contact.html">Contact</a>
+        <a href="https://phyllux.app/suite/" rel="noopener noreferrer" target="_blank">Quanton Suite</a>
+        <a href="https://finallyme.help/" rel="noopener noreferrer" target="_blank">Finally Me</a>
+        <a href="https://phyllux.com/" rel="noopener noreferrer" target="_blank">phyllux.com</a>
       </nav>
-      <p>© <span id="y"></span> Novelmate Studio. Legal entity and Phyllux positioning: see <a href="https://github.com/phibronotchi-beep/novelmate-studio/blob/main/BRAND.md">BRAND.md</a> in the site repository.</p>
+      <p>© <span id="y"></span> Novelmate Studio · Coming Fall / Winter 2026</p>
     </div>
   </footer>
+
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
+    (function () {
+      var btn = document.querySelector("[data-nav-toggle]");
+      var nav = document.querySelector("[data-site-nav]");
+      if (btn && nav) {
+        btn.addEventListener("click", function () {
+          var open = nav.classList.toggle("is-open");
+          btn.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+      }
+      var form = document.querySelector("[data-waitlist]");
+      var msg = document.querySelector("[data-waitlist-msg]");
+      if (!form || !msg) return;
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var data = new FormData(form);
+        fetch(form.action, {
+          method: "POST",
+          body: data,
+          headers: { Accept: "application/json" }
+        }).then(function (res) {
+          if (!res.ok) throw new Error("bad");
+          msg.hidden = false;
+          msg.textContent = "You are on the list. We will write when access opens.";
+          form.reset();
+        }).catch(function () {
+          msg.hidden = false;
+          msg.textContent = "Something went wrong. Email hello@novelmatestudio.com and we will add you.";
+        });
+      });
+    })();
   </script>
 </body>
 </html>

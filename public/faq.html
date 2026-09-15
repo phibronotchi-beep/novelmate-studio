@@ -4,71 +4,54 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>FAQ — Novelmate Studio</title>
-  <meta name="description" content="AI disclosure, capacity, local first setup, and what Novelmate Studio does not promise." />
+  <meta name="description" content="FAQ for Novelmate Studio: local first craft, Ollama, capacity, AI disclosure, and the Fall/Winter 2026 launch window." />
   <meta property="og:title" content="FAQ — Novelmate Studio" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://novelmatestudio.com/faq.html" />
-  <meta name="twitter:card" content="summary" />
-  <link rel="stylesheet" href="css/site.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23141820'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%236ee7c5' font-size='14' font-family='system-ui' font-weight='700'%3EN%3C/text%3E%3C/svg%3E" />
+  <meta property="og:image" content="https://novelmatestudio.com/assets/og-1200x630.webp" />
+  <link rel="canonical" href="https://novelmatestudio.com/faq.html" />
+  <link rel="stylesheet" href="css/site.css?v=20260912b" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23121820'%3E%3C/rect%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%236ee7c5' font-size='14' font-family='system-ui' font-weight='700'%3EN%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
   <header class="site-header">
     <div class="inner">
-      <a class="brand" href="index.html">Novelmate Studio</a>
-      <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">Novelmate Studio <span>soon</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="nav" data-site-nav aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="pricing.html">Pricing</a>
         <a href="faq.html" aria-current="page">FAQ</a>
         <a href="contact.html">Contact</a>
+        <a class="nav-ext" href="https://finallyme.help/" rel="noopener noreferrer" target="_blank">Finally Me</a>
+        <a class="nav-ext" href="https://phyllux.com/" rel="noopener noreferrer" target="_blank">phyllux.com</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap prose">
-    <section class="hero">
-      <h1>FAQ</h1>
-      <p class="lede">Short answers. This is not legal advice.</p>
-    </section>
+    <p class="section-kicker">FAQ</p>
+    <h1 class="section-title">Questions we answer out loud</h1>
 
-    <section>
-      <h2>Does Novelmate Studio run in the cloud?</h2>
-      <p>
-        The product direction is <strong>local first</strong>: your hardware, your models where you configure them, your files.
-        A future hosted tier would be a separate announcement with its own security story.
-      </p>
-    </section>
+    <h2>When can I buy or install it?</h2>
+    <p>Public product target is <strong>Fall / Winter 2026</strong>. Join the <a href="index.html#waitlist">waitlist</a> for first notice. Workshop builds already exist for internal and pilot work; that is not the same as a polished public installer.</p>
 
-    <section>
-      <h2>How long does a full book take?</h2>
-      <p>
-        It depends on model size, GPU, and settings. Plan for <strong>hours</strong> on a laptop class machine for long jobs, not seconds.
-        Thermal limits and VRAM matter in the real world.
-      </p>
-    </section>
+    <h2>Is this cloud AI writing?</h2>
+    <p>The core path is <strong>local first</strong> via Ollama on your machine. Your manuscripts are files you keep. We will not market a default path that uploads your novel for training.</p>
 
-    <section>
-      <h2>AI and copyright</h2>
-      <p>
-        Disclosure rules vary by region and platform. Keep human review in the loop for anything you publish or sell.
-        For depth, see the application documentation on AI authorship and copyright in the Content Studio source tree (<code>COPYRIGHT_AND_AI_AUTHORSHIP.md</code>).
-      </p>
-    </section>
+    <h2>Will it write a whole novel in five minutes?</h2>
+    <p>No. Full length runs can take hours depending on model size, chapter count, and hardware. Patience is part of the product honesty.</p>
 
-    <section>
-      <h2>What you should not expect</h2>
-      <p>
-        Guaranteed bestseller outcomes, unlimited instant generation at scale, or “we own none of your risk” hand waves.
-        If a claim is not measured on your setup, treat it as marketing from someone else.
-      </p>
-    </section>
+    <h2>Do I still need to edit?</h2>
+    <p>Yes. Novelmate Studio assists with structure and drafting. You set vision and keep final say. Human taste is not optional.</p>
 
-    <section>
-      <h2>How do I verify public claims?</h2>
-      <p>
-        Phyllux Technologies publishes <a href="https://phyllux.io/research-status.html">research status</a> with Novelmate Studio on <strong>row five</strong>. Use that table when you compare marketing language to evidence, including copy on this site.
-      </p>
-    </section>
+    <h2>What formats leave the studio?</h2>
+    <p>Markdown for continued craft. EPUB and DOCX when you export. Exact packaging options will be listed in release notes at launch.</p>
+
+    <h2>How do you prove claims?</h2>
+    <p>Phyllux Technologies tracks this lane on <a href="https://phyllux.io/research-status.html">research status</a> <strong>row five</strong>. Read that table beside any marketing sentence.</p>
+
+    <h2>Where are books made with this stack?</h2>
+    <p>Sproule Lit titles on <a href="https://phyllux.com/">phyllux.com</a> are part of the same production story: human direction, machine assistance, local custody.</p>
+    <p>Related public work: <a href="https://finallyme.help/">Finally Me</a>, <a href="https://phyllux.com/today.html">Today</a>, and Phyllux <a href="https://phyllux.io/research-status.html">research status</a>.</p>
   </main>
 
   <footer class="site-footer">
@@ -77,10 +60,27 @@
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <a href="contact.html">Contact</a>
+      
+        <a href="https://phyllux.app/suite/" rel="noopener noreferrer" target="_blank">Quanton Suite</a>
+        <a href="https://finallyme.help/" rel="noopener noreferrer" target="_blank">Finally Me</a>
+        <a href="https://phyllux.com/" rel="noopener noreferrer" target="_blank">phyllux.com</a>
+        <a href="https://phyllux.com/today.html" rel="noopener noreferrer" target="_blank">Today</a>
+        <a href="https://phyllux.io/" rel="noopener noreferrer" target="_blank">phyllux.io</a>
       </nav>
-      <p>© <span id="y"></span> Novelmate Studio.</p>
+      <p>© <span id="y"></span> Novelmate Studio · Coming Fall / Winter 2026</p>
     </div>
   </footer>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    (function () {
+      var btn = document.querySelector("[data-nav-toggle]");
+      var nav = document.querySelector("[data-site-nav]");
+      if (!btn || !nav) return;
+      btn.addEventListener("click", function () {
+        var open = nav.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    })();
+  </script>
 </body>
 </html>

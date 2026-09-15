@@ -3,80 +3,76 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Pricing — Novelmate Studio</title>
-  <meta name="description" content="Try limits, Pro subscription, and Studio queue slots for Novelmate Studio. Replace Stripe links after you create Payment Links or Billing prices." />
+  <title>Pricing — Novelmate Studio | Coming Fall/Winter 2026</title>
+  <meta name="description" content="Planned Try, Pro, and Studio queue pricing for Novelmate Studio. Billing opens with the Fall/Winter 2026 public launch. Join the waitlist." />
   <meta property="og:title" content="Pricing — Novelmate Studio" />
-  <meta property="og:description" content="Transparent tiers: try, Pro, and limited Studio queue. Stripe checkout URLs are wired from your dashboard." />
+  <meta property="og:description" content="Transparent planned tiers. Stripe checkout arrives with public launch." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://novelmatestudio.com/pricing.html" />
-  <meta name="twitter:card" content="summary" />
-  <link rel="stylesheet" href="css/site.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23141820'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%236ee7c5' font-size='14' font-family='system-ui' font-weight='700'%3EN%3C/text%3E%3C/svg%3E" />
+  <meta property="og:image" content="https://novelmatestudio.com/assets/og-1200x630.webp" />
+  <link rel="canonical" href="https://novelmatestudio.com/pricing.html" />
+  <link rel="stylesheet" href="css/site.css?v=20260912b" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23121820'%3E%3C/rect%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%236ee7c5' font-size='14' font-family='system-ui' font-weight='700'%3EN%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
   <header class="site-header">
     <div class="inner">
-      <a class="brand" href="index.html">Novelmate Studio</a>
-      <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">Novelmate Studio <span>soon</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="nav" data-site-nav aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="pricing.html" aria-current="page">Pricing</a>
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
+        <a href="index.html#waitlist">Waitlist</a>
+        <a class="nav-ext" href="https://finallyme.help/" rel="noopener noreferrer" target="_blank">Finally Me</a>
+        <a class="nav-ext" href="https://phyllux.com/" rel="noopener noreferrer" target="_blank">phyllux.com</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap">
-    <section class="hero">
-      <h1>Pricing</h1>
-      <p class="lede">
-        Try before you buy uses <strong>both</strong> a time window and usage limits so support stays sane.
-        Stripe Payment Links or Billing checkout URLs go in the buttons below once you create them in the Stripe Dashboard (see <code>docs/STRIPE.md</code> in the repo).
-      </p>
+    <p class="section-kicker">Planned tiers</p>
+    <h1 class="section-title">Pricing for the public launch</h1>
+    <p class="section-lead">
+      These are the intended shapes for Fall / Winter 2026. Stripe Payment Links and Billing will replace mailto buttons when checkout is ready.
+      Nothing here is a live charge today.
+    </p>
+
+    <section class="pricing-grid three" aria-label="Planned pricing tiers">
+      <article class="card">
+        <div class="card-body">
+          <h3>Try</h3>
+          <p class="tag-roadmap">Coming with launch</p>
+          <p class="price">Free trial</p>
+          <p>Time window plus usage limits so support stays sane. Example guardrails: one active project, capped export credits, or a 14 day window.</p>
+          <a class="btn btn-secondary" href="index.html#waitlist" style="margin-top:1rem">Join waitlist</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <h3>Pro</h3>
+          <p class="tag-roadmap">Stripe Billing planned</p>
+          <p class="price">Monthly</p>
+          <p>For local first power users. Fair use language for long runs and thermals will live in Terms when payments open.</p>
+          <a class="btn btn-primary" href="index.html#waitlist" style="margin-top:1rem">Notify me</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card-body">
+          <h3>Studio queue</h3>
+          <p class="tag-roadmap">Limited slots</p>
+          <p class="price">Custom</p>
+          <p>Human in the loop passes or pilot installs. Waitlist or deposit framing, never infinite cloud throughput.</p>
+          <a class="btn btn-secondary" href="contact.html" style="margin-top:1rem">Request a slot</a>
+        </div>
+      </article>
     </section>
 
-    <section class="pricing-grid three">
-      <div class="card">
-        <h3>Try</h3>
-        <p class="tag-roadmap">Configure in Stripe</p>
-        <p class="price">Free trial</p>
-        <p style="color:var(--muted);font-size:0.95rem;margin-bottom:var(--space-md);">
-          Example guardrails: one active project, capped export credits, or a 14 day window. Whichever hits first ends the try period.
-        </p>
-        <a class="btn btn-secondary" href="contact.html">Join waitlist</a>
-      </div>
-      <div class="card">
-        <h3>Pro</h3>
-        <p class="tag-roadmap">Stripe Billing</p>
-        <p class="price">Monthly</p>
-        <p style="color:var(--muted);font-size:0.95rem;margin-bottom:var(--space-md);">
-          For local first power users. Fair use language for long runs and thermals stays in the Terms you publish with counsel.
-        </p>
-        <a class="btn btn-primary" href="mailto:hello@novelmatestudio.com?subject=Pro%20interest">Email to subscribe</a>
-      </div>
-      <div class="card">
-        <h3>Studio queue</h3>
-        <p class="tag-roadmap">Limited slots</p>
-        <p class="price">Custom</p>
-        <p style="color:var(--muted);font-size:0.95rem;margin-bottom:var(--space-md);">
-          Human in the loop passes or pilot installs. Best framed as waitlist or deposit, not infinite throughput.
-        </p>
-        <a class="btn btn-secondary" href="contact.html">Request a slot</a>
-      </div>
-    </section>
-
-    <section class="prose">
-      <h2>Stripe placeholders</h2>
-      <p>
-        Replace the <strong>mailto</strong> and waitlist flows with real <strong>Stripe Checkout</strong> or <strong>Customer Portal</strong> links when your product and refund policy are ready.
-        Do not commit API keys. Use Cloudflare env or GitHub secrets for any server side integration.
-      </p>
-    </section>
-
-    <section class="prose">
+    <section class="prose" style="margin-top:2.5rem">
       <h2>Evidence cross check</h2>
       <p>
-        Phyllux Technologies lists what is <strong>evidenced</strong> versus <strong>roadmap</strong> for this lane on <a href="https://phyllux.io/research-status.html">research status</a> (<strong>row five</strong>). Compare tier copy here to that row before you treat anything as shipped.
+        Compare any paid claim to Phyllux <a href="https://phyllux.io/research-status.html">research status</a> <strong>row five</strong> before you treat a feature as shipped.
       </p>
     </section>
   </main>
@@ -87,10 +83,27 @@
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         <a href="contact.html">Contact</a>
+      
+        <a href="https://phyllux.app/suite/" rel="noopener noreferrer" target="_blank">Quanton Suite</a>
+        <a href="https://finallyme.help/" rel="noopener noreferrer" target="_blank">Finally Me</a>
+        <a href="https://phyllux.com/" rel="noopener noreferrer" target="_blank">phyllux.com</a>
+        <a href="https://phyllux.com/today.html" rel="noopener noreferrer" target="_blank">Today</a>
+        <a href="https://phyllux.io/" rel="noopener noreferrer" target="_blank">phyllux.io</a>
       </nav>
-      <p>© <span id="y"></span> Novelmate Studio.</p>
+      <p>© <span id="y"></span> Novelmate Studio · Coming Fall / Winter 2026</p>
     </div>
   </footer>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    (function () {
+      var btn = document.querySelector("[data-nav-toggle]");
+      var nav = document.querySelector("[data-site-nav]");
+      if (!btn || !nav) return;
+      btn.addEventListener("click", function () {
+        var open = nav.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    })();
+  </script>
 </body>
 </html>

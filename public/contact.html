@@ -4,54 +4,38 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Contact — Novelmate Studio</title>
-  <meta name="description" content="Contact Novelmate Studio for waitlist, pilots, and support." />
+  <meta name="description" content="Contact Novelmate Studio about the Fall/Winter 2026 launch, waitlist, or pilot slots." />
   <meta property="og:title" content="Contact — Novelmate Studio" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://novelmatestudio.com/contact.html" />
-  <meta name="twitter:card" content="summary" />
-  <link rel="stylesheet" href="css/site.css" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23141820'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%236ee7c5' font-size='14' font-family='system-ui' font-weight='700'%3EN%3C/text%3E%3C/svg%3E" />
+  <meta property="og:image" content="https://novelmatestudio.com/assets/og-1200x630.webp" />
+  <link rel="canonical" href="https://novelmatestudio.com/contact.html" />
+  <link rel="stylesheet" href="css/site.css?v=20260912b" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23121820'%3E%3C/rect%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%236ee7c5' font-size='14' font-family='system-ui' font-weight='700'%3EN%3C/text%3E%3C/svg%3E" />
 </head>
 <body>
   <header class="site-header">
     <div class="inner">
-      <a class="brand" href="index.html">Novelmate Studio</a>
-      <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">Novelmate Studio <span>soon</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="nav" data-site-nav aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="pricing.html">Pricing</a>
         <a href="faq.html">FAQ</a>
         <a href="contact.html" aria-current="page">Contact</a>
+        <a class="nav-ext" href="https://finallyme.help/" rel="noopener noreferrer" target="_blank">Finally Me</a>
+        <a class="nav-ext" href="https://phyllux.com/" rel="noopener noreferrer" target="_blank">phyllux.com</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap prose">
-    <section class="hero">
-      <h1>Contact</h1>
-      <p class="lede">Wire these addresses to inboxes you control before launch.</p>
-    </section>
-
-    <section>
-      <h2>Email</h2>
-      <p>
-        <a href="mailto:hello@novelmatestudio.com">hello@novelmatestudio.com</a> — general and waitlist.<br />
-        <a href="mailto:support@novelmatestudio.com">support@novelmatestudio.com</a> — paying customers once billing is live.
-      </p>
-    </section>
-
-    <section>
-      <h2>Repository</h2>
-      <p>
-        Site source: <a href="https://github.com/phibronotchi-beep/novelmate-studio">github.com/phibronotchi-beep/novelmate-studio</a> (create and push when ready).
-      </p>
-    </section>
-
-    <section>
-      <h2>Phyllux evidence lane</h2>
-      <p>
-        For diligence on what is <strong>evidenced</strong> versus <strong>roadmap</strong>, see Phyllux <a href="https://phyllux.io/research-status.html">research status</a> (<strong>row five</strong> for this product). Routine support still uses the mailboxes above.
-      </p>
-    </section>
+    <p class="section-kicker">Contact</p>
+    <h1 class="section-title">Talk to the studio</h1>
+    <p>Email <a href="mailto:hello@novelmatestudio.com">hello@novelmatestudio.com</a> for waitlist help, press, or pilot interest.</p>
+    <p>Prefer the form on the home page? <a href="index.html#waitlist">Join the waitlist</a>.</p>
+    <p>Books from the same production lane: <a href="https://phyllux.com/">phyllux.com</a> (Sproule Lit).</p>
+    <p>Finally Me open beta: <a href="https://finallyme.help/">finallyme.help</a>.</p>
+    <p>Today recovery toolkit: <a href="https://phyllux.com/today.html">phyllux.com/today</a>.</p>
+    <p>Company evidence rail: <a href="https://phyllux.io/research-status.html">phyllux.io research status</a>.</p>
   </main>
 
   <footer class="site-footer">
@@ -59,11 +43,28 @@
       <nav aria-label="Footer">
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+      
+        <a href="https://phyllux.app/suite/" rel="noopener noreferrer" target="_blank">Quanton Suite</a>
+        <a href="https://finallyme.help/" rel="noopener noreferrer" target="_blank">Finally Me</a>
+        <a href="https://phyllux.com/" rel="noopener noreferrer" target="_blank">phyllux.com</a>
+        <a href="https://phyllux.com/today.html" rel="noopener noreferrer" target="_blank">Today</a>
+        <a href="https://phyllux.io/" rel="noopener noreferrer" target="_blank">phyllux.io</a>
       </nav>
-      <p>© <span id="y"></span> Novelmate Studio.</p>
+      <p>© <span id="y"></span> Novelmate Studio · Coming Fall / Winter 2026</p>
     </div>
   </footer>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    (function () {
+      var btn = document.querySelector("[data-nav-toggle]");
+      var nav = document.querySelector("[data-site-nav]");
+      if (!btn || !nav) return;
+      btn.addEventListener("click", function () {
+        var open = nav.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    })();
+  </script>
 </body>
 </html>
