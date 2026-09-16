@@ -2,5 +2,8 @@
 Thumbs.db
 .env
 .env.*
+.env.local
 node_modules/
 .wrangler/
+.vercel
+public/assets/_staging/

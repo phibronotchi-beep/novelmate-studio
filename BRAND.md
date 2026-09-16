@@ -28,7 +28,7 @@ Keep **Terms** and **Privacy** placeholders generic ("we", "the service") until 
 
 ## Legacy name
 
-**BookWyrm Content Studio** was the previous public product name. Internal repo paths and scripts may still use `bwurm` or `BookWyrm`; customer facing copy should say **Novelmate Studio**. The fiction name **BookWyrm** may still appear in lore or legacy URLs only where intentional.
+**Novelmate Studio** was the previous public product name. Internal repo paths and scripts may still use `novelmate` or `Novelmate Studio`; customer facing copy should say **Novelmate Studio**. The fiction name **Novelmate Studio** may still appear in lore or legacy URLs only where intentional.
 
 ## Phyllux honesty rail
 

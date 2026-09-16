@@ -2,7 +2,7 @@
 
 ## What this repo is
 
-Static **marketing and conversion** site for **Novelmate Studio**. Not the Python or desktop application; that remains in the Phyllux workspace under `CLAWWORK/BookWyrm/content-studio/` until migrated.
+Static **marketing and conversion** site for **Novelmate Studio**. Not the Python or desktop application; that remains in the Phyllux workspace under `D:/Novelmate/novelmate-studio/Novelmate/content-studio/` until migrated.
 
 Contributor norms: [`CONTRIBUTING.md`](CONTRIBUTING.md). Security reporting: [`SECURITY.md`](SECURITY.md). License: [`LICENSE`](LICENSE).
 
@@ -17,7 +17,7 @@ Contributor norms: [`CONTRIBUTING.md`](CONTRIBUTING.md). Security reporting: [`S
 
 ## Product definition
 
-Authoritative product and proof bar language lives in the workspace repo **`bookwyrm-definition-web`** (`DEFINITION.md`, `SERVICES_AND_MARKETING_FRAMING.md`). Refresh site copy when those documents change materially.
+Authoritative product and proof bar language lives in the workspace repo **`novelmate-definition-web`** (`DEFINITION.md`, `SERVICES_AND_MARKETING_FRAMING.md`). Refresh site copy when those documents change materially.
 
 ## Stripe
 

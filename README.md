@@ -47,4 +47,4 @@ Public claim posture for this product lane is also reflected on **Phyllux Techno
 
 ## Application code
 
-The desktop or local first product continues to live under **`CLAWWORK/BookWyrm/content-studio/`** in the main workspace until you split it; this repo is the **public site** only.
+The desktop or local first product continues to live under **`D:/Novelmate/novelmate-studio/Novelmate/content-studio/`** in the main workspace until you split it; this repo is the **public site** only.
