@@ -170,10 +170,29 @@ a:hover { color: #9cf5dc; }
   margin-top: 1.5rem;
 }
 @media (min-width: 40rem) {
-  .sister-grid { grid-template-columns: 1fr 1fr; }
+  /* Was a hard two up. Karmabot made it three, and auto fit keeps the last
+     card from stranding on its own row as more sisters land. */
+  .sister-grid { grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+}
+/* Brand chip for a sister that has its own mark. Parked in the corner rather
+   than stacked above the text, so this card's kicker and title still line up
+   with the sibling cards that have no logo. */
+.sister-mark {
+  position: absolute;
+  top: 1.15rem;
+  right: 1.25rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border);
+}
+.sister-card:has(.sister-mark) .sister-kicker,
+.sister-card:has(.sister-mark) h3 {
+  padding-right: 3rem;
 }
 .sister-card {
   display: block;
+  position: relative;
   padding: 1.25rem 1.35rem;
   border: 1px solid var(--border);
   border-radius: var(--radius);

@@ -11,7 +11,8 @@ foreach ($page in $htmlFiles) {
   foreach ($m in [regex]::Matches($raw, 'href="([^"]+)"')) {
     $href = $m.Groups[1].Value
     if ($href -match '^(https?:|mailto:|#|//|data:)' ) { continue }
-    $rel = $href.TrimStart("/")
+    $rel = (($href -split '[?#]', 2)[0]).TrimStart("/")
+    if (-not $rel) { continue }
     $target = Join-Path $public ($rel -replace "/", [IO.Path]::DirectorySeparatorChar)
     if (-not (Test-Path -LiteralPath $target)) {
       $fail += "$($page.Name) -> $href (expected $target)"
