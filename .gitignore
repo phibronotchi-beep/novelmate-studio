@@ -7,3 +7,4 @@ node_modules/
 .wrangler/
 .vercel
 public/assets/_staging/
+.env*
