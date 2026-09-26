@@ -1,4 +1,4 @@
-/* Novelmate Studio — mobile first product site */
+/* Novelmate Studio — ink, copper, paper */
 *,
 *::before,
 *::after {
@@ -16,37 +16,45 @@ html {
 }
 
 :root {
-  --bg: #0a0c10;
-  --surface: #12161f;
-  --panel: #171c27;
-  --text: #e8eaef;
-  --muted: #9aa3b2;
-  --accent: #6ee7c5;
-  --accent-dim: #3d9a82;
-  --gold: #c9b27a;
-  --border: #2a3140;
-  --danger: #f87171;
+  --bg: #100e0c;
+  --surface: #1c1713;
+  --panel: #241e19;
+  --text: #f6f0e6;
+  --muted: #c9bbaa;
+  --accent: #e4a56c;
+  --accent-dim: #a86b3e;
+  --gold: #e8c9a4;
+  --border: rgba(228, 165, 108, 0.28);
+  --danger: #f0a394;
   --space-xs: 0.35rem;
   --space-sm: 0.6rem;
   --space-md: 1rem;
   --space-lg: 1.5rem;
   --space-xl: 2.25rem;
-  --space-2xl: 3.5rem;
-  --radius: 12px;
-  --font: "Segoe UI", system-ui, Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif;
-  --display: Georgia, "Times New Roman", serif;
+  --space-2xl: 4.25rem;
+  --radius: 18px;
+  --font: "Outfit", "Segoe UI", system-ui, sans-serif;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
   --touch-min: 44px;
-  --max: 72rem;
+  --max: 74rem;
 }
 
 body {
   margin: 0;
   font-family: var(--font);
-  font-size: 1.05rem;
-  line-height: 1.6;
+  font-size: 1.08rem;
+  line-height: 1.65;
   color: var(--text);
-  background: var(--bg);
+  background:
+    radial-gradient(1100px 520px at 8% -8%, rgba(228, 165, 108, 0.16), transparent 58%),
+    radial-gradient(800px 480px at 100% 0%, rgba(92, 36, 24, 0.45), transparent 52%),
+    var(--bg);
   min-height: 100dvh;
+}
+
+::selection {
+  background: var(--accent);
+  color: #1a120c;
 }
 
 img {
@@ -56,11 +64,11 @@ img {
 }
 
 a {
-  color: var(--accent);
+  color: var(--gold);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
-a:hover { color: #9cf5dc; }
+a:hover { color: #fff6ea; }
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
@@ -83,8 +91,8 @@ a:hover { color: #9cf5dc; }
   position: sticky;
   top: 0;
   z-index: 40;
-  backdrop-filter: blur(12px);
-  background: rgba(10, 12, 16, 0.88);
+  backdrop-filter: blur(16px);
+  background: rgba(16, 14, 12, 0.78);
   border-bottom: 1px solid var(--border);
 }
 .site-header .inner {
@@ -101,14 +109,26 @@ a:hover { color: #9cf5dc; }
 .brand {
   color: var(--text);
   text-decoration: none;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+  font-family: var(--display);
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+.brand img {
+  width: 2.15rem;
+  height: 2.15rem;
+  border-radius: 0.55rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
 }
 .brand span {
   color: var(--accent);
+  font-family: var(--font);
   font-weight: 600;
-  font-size: 0.78rem;
-  margin-left: 0.35rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 .nav {
   display: none;
@@ -129,7 +149,7 @@ a:hover { color: #9cf5dc; }
   color: var(--accent);
   font-weight: 600;
 }
-.nav a.nav-ext:hover { color: #9cf5dc; }
+.nav a.nav-ext:hover { color: #fff1e0; }
 .nav-toggle {
   display: inline-flex;
   align-items: center;
@@ -250,8 +270,8 @@ a:hover { color: #9cf5dc; }
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(90deg, rgba(10,12,16,0.92) 0%, rgba(10,12,16,0.55) 48%, rgba(10,12,16,0.35) 100%),
-    linear-gradient(0deg, rgba(10,12,16,0.95) 0%, rgba(10,12,16,0.2) 45%, rgba(10,12,16,0.55) 100%);
+    linear-gradient(100deg, rgba(16,12,10,0.92) 0%, rgba(16,12,10,0.62) 42%, rgba(16,12,10,0.18) 100%),
+    linear-gradient(0deg, rgba(16,12,10,0.88) 0%, rgba(16,12,10,0.05) 42%, rgba(16,12,10,0.35) 100%);
 }
 .hero-inner {
   position: relative;
@@ -270,22 +290,23 @@ a:hover { color: #9cf5dc; }
   display: inline-flex;
   align-items: center;
   min-height: 2rem;
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem 0.8rem;
   border-radius: 999px;
-  border: 1px solid rgba(110, 231, 197, 0.35);
-  background: rgba(17, 40, 34, 0.7);
-  color: var(--accent);
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
+  border: 1px solid rgba(228, 165, 108, 0.45);
+  background: rgba(28, 18, 12, 0.62);
+  color: var(--gold);
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 .hero-inner h1 {
   margin: 0;
   font-family: var(--display);
-  font-size: clamp(2.4rem, 7vw, 4.6rem);
-  line-height: 1.05;
-  font-weight: 600;
-  max-width: 14ch;
+  font-weight: 560;
+  font-size: clamp(2.8rem, 7.4vw, 5.4rem);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  max-width: 12ch;
 }
 .lede {
   margin: 1.1rem 0 0;
@@ -315,10 +336,11 @@ a:hover { color: #9cf5dc; }
   cursor: pointer;
 }
 .btn-primary {
-  background: var(--accent);
-  color: #0a0c10;
+  background: linear-gradient(180deg, #f0c08a, #d4894e);
+  color: #1a120c;
+  box-shadow: 0 10px 28px rgba(212, 137, 78, 0.28);
 }
-.btn-primary:hover { background: #9cf5dc; color: #0a0c10; }
+.btn-primary:hover { background: #f6d7b4; color: #1a120c; }
 .btn-secondary {
   background: transparent;
   border-color: var(--border);
@@ -415,10 +437,16 @@ a:hover { color: #9cf5dc; }
   .card-grid.four { grid-template-columns: repeat(4, 1fr); }
 }
 .card {
-  background: var(--panel);
+  background: linear-gradient(180deg, rgba(42, 32, 26, 0.92), rgba(24, 20, 16, 0.96));
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(228, 165, 108, 0.55);
 }
 .card .card-img {
   aspect-ratio: 3 / 2;
@@ -499,10 +527,11 @@ a:hover { color: #9cf5dc; }
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 999px;
-  background: rgba(110, 231, 197, 0.15);
+  background: rgba(228, 165, 108, 0.16);
   color: var(--accent);
-  font-weight: 700;
-  font-size: 0.85rem;
+  font-family: var(--display);
+  font-weight: 620;
+  font-size: 0.95rem;
   margin-bottom: 0.7rem;
 }
 .step h3 {
@@ -517,7 +546,8 @@ a:hover { color: #9cf5dc; }
 
 /* Band */
 .band {
-  background: linear-gradient(160deg, #101820, #0d1218 55%, #15120e);
+  background:
+    linear-gradient(165deg, rgba(36, 24, 18, 0.92), rgba(16, 14, 12, 0.96) 60%);
   border-block: 1px solid var(--border);
 }
 .band .wrap { padding-block: 3rem; }
@@ -611,6 +641,12 @@ a:hover { color: #9cf5dc; }
 }
 .price {
   font-family: var(--display);
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: 0.35rem 0 0.75rem;
+  letter-spacing: -0.03em;
+}
+
+.prose h1,
+.section-title {
+  letter-spacing: -0.03em;
 }
