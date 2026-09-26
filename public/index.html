@@ -411,6 +411,13 @@
       </div>
     </section>
 
+    <section class="wrap" id="twenty-books" data-promo-open hidden aria-labelledby="twenty-books-heading">
+      <p class="section-kicker">Twenty books</p>
+      <h2 class="section-title" id="twenty-books-heading">Send an idea. Keep the book.</h2>
+      <p class="section-lead">I am selecting 20 adults. You send a book idea and an author photo. I run it through Novelmate Studio and hand you a finished manuscript you own.</p>
+      <p><a class="btn btn-primary" href="twenty-books.html">Read the rules and send an idea</a></p>
+    </section>
+
     <section class="wrap" id="waitlist" aria-labelledby="waitlist-heading">
       <p class="section-kicker">Waitlist</p>
       <h2 class="section-title" id="waitlist-heading">Get notified when Novelmate Studio opens</h2>
@@ -508,6 +515,11 @@
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
+    (function () {
+      var openAt = Date.parse("2026-09-29T08:00:00-06:00");
+      if (!openAt || Date.now() < openAt) return;
+      document.querySelectorAll("[data-promo-open]").forEach(function (el) { el.hidden = false; });
+    })();
     (function () {
       var btn = document.querySelector("[data-nav-toggle]");
       var nav = document.querySelector("[data-site-nav]");
