@@ -39,7 +39,7 @@
 
     <section data-promo-closed>
       <h2>When it opens</h2>
-      <p>This offer opens Tuesday, September 29, 2026, at 8 in the morning, Edmonton time. The form stays closed until then. You can read the rules now.</p>
+      <p>This offer is paused for about one to two weeks. Target open is Tuesday, October 14, 2026, at 8 in the morning, Edmonton time. The form stays closed until then. You can read the rules now and prepare an idea. Do not send an application yet.</p>
     </section>
 
     <section>
@@ -157,7 +157,7 @@
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
     (function () {
-      var openAt = Date.parse("2026-09-29T08:00:00-06:00");
+      var openAt = Date.parse("2026-10-14T08:00:00-06:00");
       if (!openAt || Date.now() < openAt) return;
       document.querySelectorAll("[data-promo-closed]").forEach(function (el) { el.hidden = true; });
       document.querySelectorAll("[data-promo-open]").forEach(function (el) { el.hidden = false; });
