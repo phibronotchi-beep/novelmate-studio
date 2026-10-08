@@ -744,3 +744,210 @@ a:hover { color: #fff6ea; }
   position: absolute;
   left: -9999px;
 }
+
+/* Motion */
+@keyframes ember-drift {
+  0% { background-position: 0% 0%, 100% 0%, 0 0; }
+  50% { background-position: 12% 8%, 80% 12%, 0 0; }
+  100% { background-position: 0% 0%, 100% 0%, 0 0; }
+}
+@keyframes dragon-breathe {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-3px) scale(1.04); }
+}
+@keyframes soon-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+@keyframes gold-breathe {
+  0%, 100% { box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(228, 165, 108, 0.25); }
+  50% { box-shadow: 0 28px 70px rgba(0, 0, 0, 0.45), 0 0 28px rgba(228, 165, 108, 0.28); }
+}
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes pill-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes sheen {
+  0% { transform: translateX(-130%) skewX(-18deg); }
+  100% { transform: translateX(220%) skewX(-18deg); }
+}
+@keyframes rule-draw {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+@keyframes step-pop {
+  0%, 100% { transform: scale(1); }
+  40% { transform: scale(1.12); }
+}
+@keyframes ornament-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes mote {
+  0% { transform: translate3d(0, 12vh, 0); opacity: 0; }
+  12% { opacity: 0.7; }
+  100% { transform: translate3d(var(--mx, 20px), -110vh, 0); opacity: 0; }
+}
+@keyframes caption-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes title-in {
+  from { opacity: 0; letter-spacing: 0.08em; transform: translateY(18px); }
+  to { opacity: 1; letter-spacing: -0.03em; transform: none; }
+}
+
+html.motion-ready body {
+  animation: ember-drift 18s ease-in-out infinite;
+}
+.brand img {
+  animation: dragon-breathe 4.8s ease-in-out infinite;
+}
+.brand span {
+  animation: soon-pulse 2.8s ease-in-out infinite;
+}
+.nav a {
+  position: relative;
+}
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.15rem;
+  width: 100%;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+.nav a:hover::after,
+.nav a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+.hero-frame {
+  animation: gold-breathe 6s ease-in-out infinite;
+}
+.hero-caption.is-fresh {
+  animation: caption-in 0.45s ease;
+}
+html.motion-ready .hero-inner h1 {
+  animation: title-in 1.1s ease both;
+}
+html.motion-ready .lede {
+  animation: fade-up 1s ease 0.25s both;
+}
+.pill {
+  animation: pill-float 4.2s ease-in-out infinite;
+}
+.pill:nth-child(2) { animation-delay: 0.4s; }
+.pill:nth-child(3) { animation-delay: 0.8s; }
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 246, 234, 0.45), transparent);
+  animation: sheen 3.6s ease-in-out infinite;
+  pointer-events: none;
+}
+.section-title {
+  position: relative;
+}
+html.motion-ready .section-title::after {
+  content: "";
+  display: block;
+  width: 4.5rem;
+  height: 2px;
+  margin-top: 0.55rem;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+html.motion-ready .section-title.in::after {
+  animation: rule-draw 0.7s ease forwards;
+}
+html.motion-ready .reveal {
+  opacity: 0;
+  transform: translateY(28px);
+}
+html.motion-ready .reveal.in {
+  animation: rise-in 0.75s ease forwards;
+  animation-delay: var(--d, 0s);
+}
+html.motion-ready .step.in::before {
+  animation: step-pop 1.6s ease 0.3s both;
+}
+.ornament img {
+  animation: ornament-float 5.5s ease-in-out infinite;
+}
+.card {
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+.card:hover {
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.38), 0 0 0 1px rgba(228, 165, 108, 0.45);
+}
+.sister-card,
+.feature-media,
+.mosaic figure {
+  transition: transform 0.35s ease, border-color 0.35s ease;
+}
+.sister-card:hover,
+.mosaic figure:hover {
+  transform: translateY(-6px);
+}
+.scroll-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, #a86b3e, #f0c08a, #fff6ea);
+  pointer-events: none;
+}
+.motes {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.motes i {
+  position: absolute;
+  bottom: -8px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #e8c9a4;
+  opacity: 0;
+  animation: mote linear infinite;
+}
+.site-header { z-index: 40; }
+.hero-stage,
+main,
+.site-footer {
+  position: relative;
+  z-index: 2;
+}
+.waitlist input[type="email"]:focus,
+.offer-form input:focus,
+.offer-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(228, 165, 108, 0.35);
+  transition: box-shadow 0.25s ease;
+}
