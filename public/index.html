@@ -16,7 +16,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://novelmatestudio.com/assets/og-1200x630.webp" />
   <link rel="canonical" href="https://novelmatestudio.com/" />
-  <link rel="stylesheet" href="css/site.css?v=20261008b" />
+  <link rel="stylesheet" href="css/site.css?v=20261008c" />
   <link rel="icon" href="assets/brand/favicon-32.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png" />
   <script type="application/ld+json">
@@ -54,10 +54,9 @@
   <section class="hero-stage" aria-label="Novelmate Studio hero">
     <div class="hero-frame">
       <img id="heroBanner" src="assets/heroes/nm-feature-hero-01-local-first.webp" alt="" width="1920" height="1080" fetchpriority="high" />
-      <p class="hero-caption" id="heroCaption">Local first: your words stay on your machine</p>
     </div>
     <div class="hero-inner">
-      <img class="hero-mark" src="assets/brand/logo-dragon.webp" alt="Novelmate dragon crest" width="184" height="184" />
+      <p class="hero-caption" id="heroCaption">Local first: your words stay on your machine</p>
       <div class="pill-row">
         <span class="pill">Local first</span>
         <span class="pill">Coming Fall / Winter 2026</span>
@@ -576,17 +575,12 @@
       var timer = 0;
       function show(n) {
         i = (n + heroes.length) % heroes.length;
-        img.style.opacity = "0";
-        window.setTimeout(function () {
-          img.src = heroes[i][0];
-          cap.textContent = heroes[i][1];
-          img.style.opacity = "1";
-        }, 180);
+        img.src = heroes[i][0];
+        cap.textContent = heroes[i][1];
       }
       function arm() {
-        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
         window.clearInterval(timer);
-        timer = window.setInterval(function () { show(i + 1); }, 9000);
+        timer = window.setInterval(function () { show(i + 1); }, 6000);
       }
       if (prev) prev.addEventListener("click", function () { show(i - 1); arm(); });
       if (next) next.addEventListener("click", function () { show(i + 1); arm(); });
