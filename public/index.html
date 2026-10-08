@@ -16,7 +16,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://novelmatestudio.com/assets/og-1200x630.webp" />
   <link rel="canonical" href="https://novelmatestudio.com/" />
-  <link rel="stylesheet" href="css/site.css?v=20261008a" />
+  <link rel="stylesheet" href="css/site.css?v=20261008b" />
   <link rel="icon" href="assets/brand/favicon-32.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png" />
   <script type="application/ld+json">
@@ -52,8 +52,9 @@
   </header>
 
   <section class="hero-stage" aria-label="Novelmate Studio hero">
-    <div class="hero-bg" aria-hidden="true">
+    <div class="hero-frame">
       <img id="heroBanner" src="assets/heroes/nm-feature-hero-01-local-first.webp" alt="" width="1920" height="1080" fetchpriority="high" />
+      <p class="hero-caption" id="heroCaption">Local first: your words stay on your machine</p>
     </div>
     <div class="hero-inner">
       <img class="hero-mark" src="assets/brand/logo-dragon.webp" alt="Novelmate dragon crest" width="184" height="184" />
@@ -72,7 +73,6 @@
         <a class="btn btn-secondary" href="https://phyllux.com/" rel="noopener noreferrer" target="_blank">phyllux.com</a>
         <a class="btn btn-ghost" href="#pipeline">See the pipeline</a>
       </div>
-      <p class="hero-caption" id="heroCaption">Local first: your words stay on your machine</p>
       <div class="hero-nav">
         <button type="button" id="heroPrev">Previous banner</button>
         <button type="button" id="heroNext">Next banner</button>
@@ -419,13 +419,6 @@
       </div>
     </section>
 
-    <section class="wrap" id="twenty-books" data-promo-open hidden aria-labelledby="twenty-books-heading">
-      <p class="section-kicker">Twenty books</p>
-      <h2 class="section-title" id="twenty-books-heading">Send an idea. Keep the book.</h2>
-      <p class="section-lead">I am selecting 20 adults. You send a book idea and an author photo. I run it through Novelmate Studio and hand you a finished manuscript you own.</p>
-      <p><a class="btn btn-primary" href="twenty-books.html">Read the rules and send an idea</a></p>
-    </section>
-
     <section class="wrap" id="waitlist" aria-labelledby="waitlist-heading">
       <p class="section-kicker">Waitlist</p>
       <h2 class="section-title" id="waitlist-heading">Get notified when Novelmate Studio opens</h2>
@@ -598,11 +591,6 @@
       if (prev) prev.addEventListener("click", function () { show(i - 1); arm(); });
       if (next) next.addEventListener("click", function () { show(i + 1); arm(); });
       arm();
-    })();
-    (function () {
-      var openAt = Date.parse("2026-09-29T08:00:00-06:00");
-      if (!openAt || Date.now() < openAt) return;
-      document.querySelectorAll("[data-promo-open]").forEach(function (el) { el.hidden = false; });
     })();
     (function () {
       var btn = document.querySelector("[data-nav-toggle]");

@@ -1,4 +1,8 @@
 {
   "buildCommand": "",
-  "outputDirectory": "public"
+  "outputDirectory": "public",
+  "redirects": [
+    { "source": "/twenty-books.html", "destination": "/", "permanent": true },
+    { "source": "/twenty-books-thanks.html", "destination": "/", "permanent": true }
+  ]
 }
