@@ -15,15 +15,15 @@ html {
 }
 
 :root {
-  --bg: #f3eadb;
-  --surface: #faf6ee;
-  --panel: #fffaf3;
-  --text: #1c1612;
-  --muted: #5c5148;
-  --accent: #8a4e28;
-  --accent-dim: #6e3c1e;
-  --gold: #8a4e28;
-  --border: rgba(70, 42, 24, 0.22);
+  --bg: #100e0c;
+  --surface: #1c1713;
+  --panel: #241e19;
+  --text: #f6f0e6;
+  --muted: #c9bbaa;
+  --accent: #e4a56c;
+  --accent-dim: #a86b3e;
+  --gold: #e8c9a4;
+  --border: rgba(228, 165, 108, 0.28);
   --danger: #8d3b32;
   --space-xs: 0.35rem;
   --space-sm: 0.6rem;
@@ -45,8 +45,8 @@ body {
   line-height: 1.7;
   color: var(--text);
   background:
-    radial-gradient(1100px 520px at 8% -8%, rgba(168, 107, 62, 0.16), transparent 58%),
-    radial-gradient(800px 480px at 100% 0%, rgba(92, 36, 24, 0.08), transparent 52%),
+    radial-gradient(1100px 520px at 8% -8%, rgba(228, 165, 108, 0.16), transparent 58%),
+    radial-gradient(800px 480px at 100% 0%, rgba(92, 36, 24, 0.45), transparent 52%),
     var(--bg);
   min-height: 100dvh;
 }
@@ -67,7 +67,7 @@ a {
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
-a:hover { color: var(--accent-dim); }
+a:hover { color: #fff6ea; }
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
@@ -440,7 +440,7 @@ a:hover { color: var(--accent-dim); }
   overflow: hidden;
   border: 1px solid var(--border);
   background: var(--surface);
-  box-shadow: 0 16px 36px rgba(70, 42, 24, 0.1);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
 }
 .ornament {
   margin: 0 0 1.5rem;
@@ -458,7 +458,7 @@ a:hover { color: var(--accent-dim); }
   height: auto;
   aspect-ratio: auto;
   object-fit: contain;
-  background: #f7f1e6;
+  background: #14110e;
   display: block;
 }
 .feature-copy h3 {
@@ -490,11 +490,11 @@ a:hover { color: var(--accent-dim); }
   .card-grid.four { grid-template-columns: repeat(4, 1fr); }
 }
 .card {
-  background: var(--panel);
+  background: linear-gradient(180deg, rgba(42, 32, 26, 0.92), rgba(24, 20, 16, 0.96));
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: 0 12px 28px rgba(70, 42, 24, 0.08);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 .card:hover {
@@ -502,7 +502,7 @@ a:hover { color: var(--accent-dim); }
   border-color: rgba(228, 165, 108, 0.55);
 }
 .card .card-img {
-  background: #f7f1e6;
+  background: #14110e;
 }
 .card .card-body { padding: 1.1rem 1.15rem 1.25rem; }
 .card h3 {
@@ -546,7 +546,7 @@ a:hover { color: var(--accent-dim); }
   background: var(--surface);
 }
 .mosaic img {
-  background: #f7f1e6;
+  background: #14110e;
 }
 .mosaic figcaption {
   padding: 0.55rem 0.7rem 0.75rem;
@@ -601,7 +601,8 @@ a:hover { color: var(--accent-dim); }
 
 /* Band */
 .band {
-  background: #efe4d2;
+  background:
+    linear-gradient(165deg, rgba(36, 24, 18, 0.92), rgba(16, 14, 12, 0.96) 60%);
   border-block: 1px solid var(--border);
 }
 .band .wrap { padding-block: 3rem; }
@@ -631,7 +632,7 @@ a:hover { color: var(--accent-dim); }
   min-height: var(--touch-min);
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: #fffaf3;
+  background: rgba(0, 0, 0, 0.35);
   color: var(--text);
   padding: 0.75rem 1.15rem;
   font: inherit;
@@ -726,7 +727,7 @@ a:hover { color: var(--accent-dim); }
   width: 100%;
   border-radius: 12px;
   border: 1px solid var(--border);
-  background: #fffaf3;
+  background: rgba(0, 0, 0, 0.35);
   color: var(--text);
   padding: 0.75rem 1rem;
   font: inherit;
