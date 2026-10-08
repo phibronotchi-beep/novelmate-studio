@@ -15,16 +15,16 @@ html {
 }
 
 :root {
-  --bg: #100e0c;
-  --surface: #1c1713;
-  --panel: #241e19;
-  --text: #f6f0e6;
-  --muted: #c9bbaa;
-  --accent: #e4a56c;
-  --accent-dim: #a86b3e;
-  --gold: #e8c9a4;
-  --border: rgba(228, 165, 108, 0.28);
-  --danger: #f0a394;
+  --bg: #f3eadb;
+  --surface: #faf6ee;
+  --panel: #fffaf3;
+  --text: #1c1612;
+  --muted: #5c5148;
+  --accent: #8a4e28;
+  --accent-dim: #6e3c1e;
+  --gold: #8a4e28;
+  --border: rgba(70, 42, 24, 0.22);
+  --danger: #8d3b32;
   --space-xs: 0.35rem;
   --space-sm: 0.6rem;
   --space-md: 1rem;
@@ -45,8 +45,8 @@ body {
   line-height: 1.65;
   color: var(--text);
   background:
-    radial-gradient(1100px 520px at 8% -8%, rgba(228, 165, 108, 0.16), transparent 58%),
-    radial-gradient(800px 480px at 100% 0%, rgba(92, 36, 24, 0.45), transparent 52%),
+    radial-gradient(1100px 520px at 8% -8%, rgba(168, 107, 62, 0.16), transparent 58%),
+    radial-gradient(800px 480px at 100% 0%, rgba(92, 36, 24, 0.08), transparent 52%),
     var(--bg);
   min-height: 100dvh;
 }
@@ -91,9 +91,17 @@ a:hover { color: #fff6ea; }
   top: 0;
   z-index: 40;
   backdrop-filter: blur(16px);
-  background: rgba(16, 14, 12, 0.78);
-  border-bottom: 1px solid var(--border);
+  background: rgba(22, 16, 12, 0.94);
+  border-bottom: 1px solid rgba(228, 165, 108, 0.28);
+  color: #f6f0e6;
 }
+.site-header .brand { color: #f6f0e6; }
+.site-header .brand span { color: #e4a56c; }
+.site-header .nav a { color: #e6d7c6; }
+.site-header .nav a[aria-current="page"],
+.site-header .nav a:hover { color: #fff; }
+.site-header .nav a.nav-ext { color: #e4a56c; }
+.site-header .nav a.nav-ext:hover { color: #fff1e0; }
 .site-header .inner {
   width: min(100% - 1.5rem, var(--max));
   margin: 0 auto;
@@ -335,7 +343,7 @@ a:hover { color: #fff6ea; }
 .lede {
   margin: 1.1rem 0 0;
   max-width: 38rem;
-  color: rgba(232, 234, 239, 0.82);
+  color: var(--muted);
   font-size: clamp(1.05rem, 2.4vw, 1.25rem);
 }
 .cta-row {
@@ -426,12 +434,26 @@ a:hover { color: #fff6ea; }
   overflow: hidden;
   border: 1px solid var(--border);
   background: var(--surface);
-  box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+  box-shadow: 0 16px 36px rgba(70, 42, 24, 0.1);
 }
-.feature-media img {
+.ornament {
+  margin: 0 0 1.5rem;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+}
+.ornament img {
+  background: transparent;
+}
+.feature-media img,
+.card .card-img,
+.mosaic img {
   width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  background: #f7f1e6;
+  display: block;
 }
 .feature-copy h3 {
   margin: 0 0 0.6rem;
@@ -461,11 +483,11 @@ a:hover { color: #fff6ea; }
   .card-grid.four { grid-template-columns: repeat(4, 1fr); }
 }
 .card {
-  background: linear-gradient(180deg, rgba(42, 32, 26, 0.92), rgba(24, 20, 16, 0.96));
+  background: var(--panel);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 12px 28px rgba(70, 42, 24, 0.08);
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 .card:hover {
@@ -473,9 +495,7 @@ a:hover { color: #fff6ea; }
   border-color: rgba(228, 165, 108, 0.55);
 }
 .card .card-img {
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
-  width: 100%;
+  background: #f7f1e6;
 }
 .card .card-body { padding: 1.1rem 1.15rem 1.25rem; }
 .card h3 {
@@ -516,9 +536,7 @@ a:hover { color: #fff6ea; }
   background: var(--surface);
 }
 .mosaic img {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
+  background: #f7f1e6;
 }
 .mosaic figcaption {
   padding: 0.55rem 0.7rem 0.75rem;
@@ -570,8 +588,7 @@ a:hover { color: #fff6ea; }
 
 /* Band */
 .band {
-  background:
-    linear-gradient(165deg, rgba(36, 24, 18, 0.92), rgba(16, 14, 12, 0.96) 60%);
+  background: #efe4d2;
   border-block: 1px solid var(--border);
 }
 .band .wrap { padding-block: 3rem; }
@@ -601,7 +618,7 @@ a:hover { color: #fff6ea; }
   min-height: var(--touch-min);
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: rgba(0,0,0,0.35);
+  background: #fffaf3;
   color: var(--text);
   padding: 0.75rem 1.15rem;
   font: inherit;
