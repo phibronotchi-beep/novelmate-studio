@@ -16,7 +16,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://novelmatestudio.com/assets/og-1200x630.webp" />
   <link rel="canonical" href="https://novelmatestudio.com/" />
-  <link rel="stylesheet" href="css/site.css?v=20260925c" />
+  <link rel="stylesheet" href="css/site.css?v=20261008a" />
   <link rel="icon" href="assets/brand/favicon-32.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png" />
   <script type="application/ld+json">
@@ -37,7 +37,7 @@
 
   <header class="site-header">
     <div class="inner">
-      <a class="brand" href="index.html"><img src="assets/brand/novelmate-mark.webp" alt="" width="36" height="36" />Novelmate Studio <span>soon</span></a>
+      <a class="brand" href="index.html"><img class="brand-dragon" src="assets/brand/logo-dragon.webp" alt="Novelmate dragon" width="58" height="58" />Novelmate Studio <span>soon</span></a>
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="nav" data-site-nav aria-label="Primary">
         <a href="index.html" aria-current="page">Home</a>
@@ -53,9 +53,10 @@
 
   <section class="hero-stage" aria-label="Novelmate Studio hero">
     <div class="hero-bg" aria-hidden="true">
-      <img src="assets/marketing/novelmate-studio-hero.webp?v=20260925" alt="" width="1920" height="1080" fetchpriority="high" />
+      <img id="heroBanner" src="assets/heroes/nm-feature-hero-01-local-first.webp" alt="" width="1920" height="1080" fetchpriority="high" />
     </div>
     <div class="hero-inner">
+      <img class="hero-mark" src="assets/brand/logo-dragon.webp" alt="Novelmate dragon crest" width="184" height="184" />
       <div class="pill-row">
         <span class="pill">Local first</span>
         <span class="pill">Coming Fall / Winter 2026</span>
@@ -70,6 +71,11 @@
         <a class="btn btn-primary" href="#waitlist">Join the waitlist</a>
         <a class="btn btn-secondary" href="https://phyllux.com/" rel="noopener noreferrer" target="_blank">phyllux.com</a>
         <a class="btn btn-ghost" href="#pipeline">See the pipeline</a>
+      </div>
+      <p class="hero-caption" id="heroCaption">Local first: your words stay on your machine</p>
+      <div class="hero-nav">
+        <button type="button" id="heroPrev">Previous banner</button>
+        <button type="button" id="heroNext">Next banner</button>
       </div>
     </div>
   </section>
@@ -517,6 +523,82 @@
 
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
+    (function () {
+      var heroes = [
+        ["assets/heroes/nm-feature-hero-01-local-first.webp", "Local first: your words stay on your machine"],
+        ["assets/heroes/nm-feature-hero-02-ollama-powered.webp", "Ollama powered: local models write the book"],
+        ["assets/heroes/nm-feature-hero-03-plan-to-export.webp", "Plan to export: outline, write, polish, ship"],
+        ["assets/heroes/nm-feature-hero-04-content-freedom.webp", "Content freedom: your story, your rules"],
+        ["assets/heroes/nm-feature-hero-05-model-routing.webp", "Model routing: a different mind per stage"],
+        ["assets/heroes/nm-feature-hero-06-free-cloud-models.webp", "Free cloud models: OpenRouter free text, when you want it"],
+        ["assets/heroes/nm-feature-hero-07-two-minds.webp", "Two minds: chat and pipeline never mix"],
+        ["assets/heroes/nm-feature-hero-08-style-bible.webp", "Style bible: hold one voice across chapters"],
+        ["assets/heroes/nm-feature-hero-09-humanizing-polish.webp", "Humanizing polish: cut the brochure tone"],
+        ["assets/heroes/nm-feature-hero-10-epub-export.webp", "EPUB export: retail ready manuscripts"],
+        ["assets/heroes/nm-feature-hero-11-cover-workflow.webp", "Cover workflow: title and author baked into the art"],
+        ["assets/heroes/nm-feature-hero-12-pen-name-models.webp", "Pen name models: baked Ollama tags for house voices"],
+        ["assets/heroes/nm-feature-hero-13-json-packs.webp", "JSON packs: craft knowledge on tap"],
+        ["assets/heroes/nm-feature-hero-14-co-writer.webp", "Co-writer: side help while you draft"],
+        ["assets/heroes/nm-feature-hero-15-project-library.webp", "Project library: many books, one desk"],
+        ["assets/heroes/nm-feature-hero-16-batch-runs.webp", "Batch runs: queue the long work"],
+        ["assets/heroes/nm-feature-hero-17-repair-pass.webp", "Repair pass: fix what went wrong"],
+        ["assets/heroes/nm-feature-hero-18-drift-check.webp", "Drift check: catch plot and entity drift"],
+        ["assets/heroes/nm-feature-hero-19-version-history.webp", "Version history: snapshots before you overwrite"],
+        ["assets/heroes/nm-feature-hero-20-offline-ready.webp", "Offline ready: no key required for local"],
+        ["assets/heroes/nm-feature-hero-21-optional-cloud.webp", "Optional cloud: OpenRouter only when you choose"],
+        ["assets/heroes/nm-feature-hero-22-model-for-this-run.webp", "Model for this run: one pick for every stage"],
+        ["assets/heroes/nm-feature-hero-23-privacy-ledger.webp", "Privacy ledger: know what leaves the machine"],
+        ["assets/heroes/nm-feature-hero-24-cli-and-gui.webp", "CLI and GUI: same studio, two doors"],
+        ["assets/heroes/nm-feature-hero-25-field-guides.webp", "Field guides: practical nonfiction form"],
+        ["assets/heroes/nm-feature-hero-26-fiction-pipeline.webp", "Fiction pipeline: scene to chapter prose"],
+        ["assets/heroes/nm-feature-hero-27-font-profiles.webp", "Font profiles: type that fits the book"],
+        ["assets/heroes/nm-feature-hero-28-interior-images.webp", "Interior images: openers, ornaments, figures"],
+        ["assets/heroes/nm-feature-hero-29-polish-layers.webp", "Polish layers: dev, line, copy, literary"],
+        ["assets/heroes/nm-feature-hero-30-summarize-stage.webp", "Summarize stage: keep the long arc in view"],
+        ["assets/heroes/nm-feature-hero-31-studio-doctor.webp", "Studio doctor: check config and Ollama"],
+        ["assets/heroes/nm-feature-hero-32-windows-native.webp", "Windows native: built for your PC"],
+        ["assets/heroes/nm-feature-hero-33-no-local-bill.webp", "No local bill: home tokens cost nothing"],
+        ["assets/heroes/nm-feature-hero-34-free-model-catalog.webp", "Free model catalog: usable free text models listed"],
+        ["assets/heroes/nm-feature-hero-35-outline-alternatives.webp", "Outline alternatives: compare plans, then promote one"],
+        ["assets/heroes/nm-feature-hero-36-streaming-write.webp", "Streaming write: watch the draft arrive"],
+        ["assets/heroes/nm-feature-hero-37-files-as-masters.webp", "Files as masters: your project folder is truth"],
+        ["assets/heroes/nm-feature-hero-38-long-books.webp", "Long books: targets from real comparables"],
+        ["assets/heroes/nm-feature-hero-39-accessibility.webp", "Accessibility: a desk that stays readable"],
+        ["assets/heroes/nm-feature-hero-40-design-presets.webp", "Design presets: look locked before export"],
+        ["assets/heroes/nm-feature-hero-41-lexical-chain.webp", "Lexical chain: keep language tied together"],
+        ["assets/heroes/nm-feature-hero-42-export-qa.webp", "Export QA: catch broken images and matter"],
+        ["assets/heroes/nm-feature-hero-43-when-models-fail.webp", "When models fail: read the symptom, change one thing"],
+        ["assets/heroes/nm-feature-hero-44-one-click-launch.webp", "One click launch: setup once, open the desk"],
+        ["assets/heroes/nm-feature-hero-45-manuscript-editor.webp", "Manuscript editor: edit with history at hand"],
+        ["assets/heroes/nm-feature-hero-46-openrouter-stages.webp", "OpenRouter stages: cloud for outline and polish"],
+        ["assets/heroes/nm-feature-hero-47-fallback-ollama.webp", "Fallback to Ollama: cloud fails, local continues"],
+        ["assets/heroes/nm-feature-hero-48-honest-limits.webp", "Honest limits: no fake speeds or rankings"]
+      ];
+      var img = document.getElementById("heroBanner");
+      var cap = document.getElementById("heroCaption");
+      var prev = document.getElementById("heroPrev");
+      var next = document.getElementById("heroNext");
+      if (!img || !cap || !heroes.length) return;
+      var i = 0;
+      var timer = 0;
+      function show(n) {
+        i = (n + heroes.length) % heroes.length;
+        img.style.opacity = "0";
+        window.setTimeout(function () {
+          img.src = heroes[i][0];
+          cap.textContent = heroes[i][1];
+          img.style.opacity = "1";
+        }, 180);
+      }
+      function arm() {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        window.clearInterval(timer);
+        timer = window.setInterval(function () { show(i + 1); }, 9000);
+      }
+      if (prev) prev.addEventListener("click", function () { show(i - 1); arm(); });
+      if (next) next.addEventListener("click", function () { show(i + 1); arm(); });
+      arm();
+    })();
     (function () {
       var openAt = Date.parse("2026-09-29T08:00:00-06:00");
       if (!openAt || Date.now() < openAt) return;
